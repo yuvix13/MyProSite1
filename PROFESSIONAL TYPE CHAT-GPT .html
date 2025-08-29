@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pro Web Template with Monetization</title>
+  <style>
+    :root {
+      --clr-bg: #f9fafb;
+      --clr-text: #111;
+      --clr-accent: #2563eb;
+      --clr-accent-hover: #1d4ed8;
+      --clr-light: #fff;
+      --clr-dark: #0f172a;
+      --radius: 12px;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background: var(--clr-bg);
+      color: var(--clr-text);
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: var(--clr-light);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    header .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: var(--clr-accent);
+    }
+    header nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--clr-text);
+      font-weight: 500;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+    .btn.primary {
+      background: var(--clr-accent);
+      color: #fff;
+    }
+    .btn.primary:hover { background: var(--clr-accent-hover); }
+    .btn.secondary {
+      border: 2px solid var(--clr-accent);
+      color: var(--clr-accent);
+    }
+    .btn.secondary:hover { background: var(--clr-accent); color: #fff; }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(to right, #2563eb, #1e3a8a);
+      color: white;
+    }
+    .hero h1 { font-size: 2.5rem; }
+    .hero p { margin: 1rem auto; max-width: 600px; }
+    .cta { margin-top: 2rem; }
+
+    .pricing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 3rem 2rem;
+    }
+    .card {
+      background: var(--clr-light);
+      border-radius: var(--radius);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      padding: 2rem;
+      text-align: center;
+    }
+    .card h3 { margin: 0.5rem 0; }
+    .card .price { font-size: 1.5rem; font-weight: bold; margin: 1rem 0; }
+
+    .subscribe {
+      background: var(--clr-dark);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .subscribe input {
+      padding: 0.7rem;
+      border-radius: var(--radius);
+      border: none;
+      outline: none;
+      width: 250px;
+      max-width: 80%;
+      margin-right: 0.5rem;
+    }
+    .subscribe button {
+      padding: 0.7rem 1.2rem;
+      border-radius: var(--radius);
+      border: none;
+      background: var(--clr-accent);
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .subscribe button:hover { background: var(--clr-accent-hover); }
+
+    footer {
+      background: var(--clr-light);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    footer a {
+      margin: 0 0.5rem;
+      color: var(--clr-accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MyProSite</div>
+    <nav>
+      <a href="#pricing">Pricing</a>
+      <a href="#subscribe">Subscribe</a>
+      <a href="https://patreon.com/yourpage" target="_blank">Support</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Monetize Your Passion 🚀</h1>
+    <p>Join us and get exclusive deals, support us through affiliate links, and stay updated with our newsletter.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://www.amazon.in/dp/example?tag=yourID" target="_blank" rel="sponsored noopener">🔥 Buy on Amazon</a>
+      <a class="btn secondary" href="https://patreon.com/yourpage" target="_blank">❤️ Support Us</a>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <div class="card">
+      <h3>Starter</h3>
+      <p class="price">Free</p>
+      <p>Basic access with updates</p>
+      <a class="btn secondary" href="https://example-affiliate.com/starter?ref=yourID" target="_blank" rel="sponsored">Get Starter</a>
+    </div>
+    <div class="card">
+      <h3>Pro</h3>
+      <p class="price">Rs. 9.99</p>
+      <p>Unlock premium features</p>
+      <a class="btn primary" href="https://example-affiliate.com/pro?ref=yourID" target="_blank" rel="sponsored">Go Pro</a>
+    </div>
+    <div class="card">
+      <h3>Team</h3>
+      <p class="price">Rs. 29.99</p>
+      <p>Perfect for groups & collabs</p>
+      <a class="btn secondary" href="https://example-affiliate.com/team?ref=yourID" target="_blank" rel="sponsored">Contact Sales</a>
+    </div>
+  </section>
+
+  <section id="subscribe" class="subscribe">
+    <h2>📩 Subscribe to Our Newsletter</h2>
+    <p>Get the latest updates and special offers directly in your inbox.</p>
+    <form action="https://formspree.io/f/yourFormID" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MyProSite | <a href="https://example-affiliate.com/deals?ref=yourID">Deals</a> | <a href="https://patreon.com/yourpage">Support</a></p>
+  </footer>
+</body>
+</html>
+
